@@ -1,0 +1,55 @@
+.home__wrapper {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.home__header {
+	background: #333;
+	color: #fff;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.home__main-addCity-button-wrapper {
+	min-width: 400px;
+	margin: 0 auto;
+	padding: 40px;
+	background: #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px 2px rgba(4, 127, 237, 0.2);
+
+	position: fixed;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.home__main-addCity-button-wrapper h2 {
+	margin-bottom: 20px;
+}
+
+.home__main-forecast-error {
+	color: rgb(255, 0, 0);
+	font-style: italic;
+	font-size: smaller;
+	max-width: 85%;
+	text-align: center;
+}
+
+.home__main-forecast-wrapper {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.home__header-greeting,
+.home__header-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home__header-buttons {
+	justify-content: space-around;
+	margin-top: 20px;
+}
