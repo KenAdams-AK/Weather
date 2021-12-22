@@ -32,7 +32,7 @@ export const getForecast = (selectedCityLocalStorage) => {
 		const apiKey = '0416fc94bd8c14e8697e298e323b8846';
 		const options = {
 			method: 'get',
-			url: `http://api.openweathermap.org/data/2.5/weather?q=${selectedCityLocalStorage}&appid=${apiKey}&units=metric`,
+			url: `https://api.openweathermap.org/data/2.5/weather?q=${selectedCityLocalStorage}&appid=${apiKey}&units=metric`,
 		};
 
 		axios(options)
