@@ -49,16 +49,19 @@ function Home() {
 				</div>
 				<div className="home__header-buttons">
 					<Link to="/add_city">
-						<div className="home__header-addNewCity">
+						<div className="home__header-addNewCity" style={{ margin: '3px' }}>
 							<Button variant="contained">Add new city</Button>
 						</div>
 					</Link>
 
-					<div className="home__header-selectCity">
+					<div className="home__header-selectCity" style={{ margin: '3px' }}>
 						<SelectCity />
 					</div>
 
-					<div className="home__header-removeCurrentCity">
+					<div
+						className="home__header-removeCurrentCity"
+						style={{ margin: '3px' }}
+					>
 						<Button
 							variant="contained"
 							onClick={() => {
