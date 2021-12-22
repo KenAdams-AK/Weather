@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, HashRouter } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import Home from './Home';
 import Login from './Login';
@@ -46,7 +46,7 @@ function Main() {
 	);
 
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<div className="mainScreen__wrapper">
 				<Switch>
 					<PrivateRoute exact path="/" component={Home} />
@@ -55,7 +55,7 @@ function Main() {
 					<Redirect from="*" to="/" />
 				</Switch>
 			</div>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
